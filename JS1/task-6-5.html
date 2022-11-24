@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 6-5 JS1</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let data = "120px";
+        function getNumber(a) {
+            a = parseFloat(a);
+            if (isNaN(a)) {
+                return 0;
+            }
+            return a;
+        }
+        console.log(getNumber(data));
+    </script>
+
+</body>
+
+</html>

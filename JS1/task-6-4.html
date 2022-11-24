@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 6-4 JS1</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let num = 2, sum = "";
+        const square = () => {
+            return num * num;
+        }
+        for (let i = 1; i <= 3; i++) {
+            num = square();
+            sum = sum + num + " ";
+        }
+        console.log(sum.trim());
+    </script>
+
+</body>
+
+</html>
