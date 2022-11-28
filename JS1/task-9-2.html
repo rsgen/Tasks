@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 9-2 JS1</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        const list = ["Банан", "Апельсин", "Яблоко"];
+        let result = "";
+        for (let value of list) {
+            if (value.length > result.length) {
+                result = value;
+            }
+        }
+        console.log(result);
+
+
+    </script>
+
+</body>
+
+</html>

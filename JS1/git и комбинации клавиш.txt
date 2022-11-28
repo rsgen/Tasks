@@ -1,0 +1,55 @@
+Я администратор компьютера и единственный пользователь git:
+git config --global user.name "name"
+git config --global user.email "github-email"
+
+Я не единственный пользователь компьютера
+    после git init, находясь в папке проекта устанавливаем локальные конфиги
+    git config --local user.name "name"
+    git config --local user.email "github-email"
+
+Работа с git
+1) Создать папку на компьютере
+2) Создать репозиторий на github
+3) Открыть терминал, находять в нужной папке
+4) В терминале прописать git init
+5) Скопировать строчку, начинающуюся с git remote... и вставить в терминал
+Команды, которые делаются всегда:
+git add "название фала"
+git commit -m "сообщение что вы сделали"
+git push -u origin main
+
+Комбинации клавиш:
+        Ctrl => Cmd
+        Alt => Opt
+
+        Ctrl + S => сохранить
+        Ctrl + C - копировать
+        Ctrl + V - вставить
+        Ctrl + X - вырезать
+        Ctrl + Z - отменить действие
+        Ctrl + Y - вернуть отмененное действие => Ctrl + Shift + Z
+        Ctrl + A - выделить все
+
+        Ctrl + / - поставить / удалить комментарий
+        Alt + Z (Убрать горизонтальную прокруку - сделать текст на несколько строчек) => View -> Word Wrap
+
+        Shift + стрелка
+        Shift + Home / Shift + End => Выделить весь текст от курсора до начала / конца строки
+
+        Alt + поставить курсор в нужное место => Мульти курсор
+
+        Alt + Shift + стрелка вниз => скопировать выделенный кусок текста или строку
+        Alt + стрелка вверх / вниз => Поменять строки местами
+
+        Ctrl + R - обновить страницу
+        Ctrl + Shift + R - очистить кеш браузера и обновить страницу
+
+tldr ls
+tldr cat
+tldr grep
+ls -la
+cat index.html | wc
+cat index.html | wc -l
+cat index.html | grep div | wc -l
+echo 'hello world' > asd.txt
+cat index.html | grep div >> asd.txt

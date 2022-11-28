@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 9-11 JS1</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let list = [2, 45, 3, 23, 6];
+
+        function average(list) {
+            let avSum = 0, sum = 0;
+            for (let value of list) {
+                sum += value;
+                avSum = sum/(list.length);
+            }
+            return (Math.round(avSum));
+        }
+
+        console.log(average(list));
+    </script>
+
+</body>
+
+</html>

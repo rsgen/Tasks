@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 9-15 JS1</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let list = ["Лёша", "default", "полке", "клопа", "нашёл"];
+        let q = 0;
+        for (let value of list) {
+            q = q + 1;
+            if (value.toLowerCase() === "default") q = q - 1;
+        }
+        console.log(q);
+    </script>
+
+</body>
+
+</html>

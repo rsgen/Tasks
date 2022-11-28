@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 9-18 JS1</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        const list = [
+            { product: "Apple", price: 25 },
+            { product: "Cherry", price: 32 },
+            { product: "Strawberry", price: 45 }
+        ];
+        let pos = 0, max = 0;
+        for ( let i = 0; i <= list.length -1; i++) {
+            if (list[i]["price"] > max) { 
+                max = list[i]["price"];
+                pos = i;
+            }
+        }
+        console.log(list[pos]["product"]);
+
+    </script>
+
+</body>
+
+</html>

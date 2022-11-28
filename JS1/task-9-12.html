@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 9-12 JS1</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let list = [2, 54, 2, 54, false, 2];
+        let sum = 0;
+        for (let value of list) {
+            if (value == true || value == false) break;
+            sum += value;
+        }
+        console.log(sum);
+    </script>
+
+</body>
+
+</html>

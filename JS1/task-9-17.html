@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 9-17 JS1</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        const obj = {
+            "Яблоко": "фрукт",
+            "Арбуз": "ягода",
+            "Помидор": "овощ",
+            "Огурец": "овощ",
+            "Вишня": "ягода"
+        };
+        let newObj = {};
+        for (let value of Object.values(obj)) {
+            if (newObj[value] === undefined) {
+                newObj[value] = 1
+                continue
+            }
+            newObj[value] += 1
+        }
+
+        console.log(newObj);
+
+    </script>
+
+</body>
+
+</html>

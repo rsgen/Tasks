@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 9-14 JS1</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let list = ["привет",1,"пока",true,2,false];
+        let numbers_list = [];
+        for (let value of list) {
+            if (value == false) break;
+            if (!isNaN(value) && value !== true) numbers_list.push(value);
+        }
+        console.log(numbers_list);
+    </script>
+
+</body>
+
+</html>

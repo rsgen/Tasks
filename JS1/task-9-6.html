@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 9-6 JS1</title>
+</head>
+
+<body>
+
+
+    <script>
+    "use strict";
+        let list = [], result = 0;
+        for (let i = 0; i < 100; i++) {
+            list[i] = i;
+        }
+
+       function isPrime(a) {
+        for (let i = 2; i < a; i++) {
+          if (a % i === 0) return false
+        }
+        return true;
+       }
+       
+        for (let i = 2; i <= list.length - 1; i++) {
+          if (isPrime(i)) result += list[i];
+        }
+        console.log(result);
+
+    </script>
+
+</body>
+
+</html>

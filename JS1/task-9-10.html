@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 9-10 JS1</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let list = [5,3,31,1,12];
+
+        function count(list) {
+            let q = 0;
+            for (let value of list) {
+                if (value % 2 === 0) q += 1;
+            }
+            return q;
+        }
+
+        console.log(count(list));
+    </script>
+
+</body>
+
+</html>

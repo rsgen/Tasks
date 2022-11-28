@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 9-7 JS1</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        const list = [2, 45, 3, 23, 6];
+        let max = list[1], min = list[1];
+        for (let value of list) {
+            if (value > max) max = value;
+            if (value < min) min = value;
+        }
+        console.log(max * min);
+    </script>
+
+</body>
+
+</html>
