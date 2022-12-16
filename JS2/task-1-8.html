@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 1-8 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let phone = "+712:345,,,,67*8,90";
+        phone = phone.replace((/,/ig), "");
+        phone = phone.replace((/:/ig), "");
+        phone = phone.replace((/\*/ig), "");
+        phone = phone.replace((/ /ig), "");
+        console.log(phone);
+    </script>
+
+</body>
+
+</html>

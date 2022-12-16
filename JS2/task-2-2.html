@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 2-2 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let partNumbers = ["REGRG34FH", "RGREEGT", "354254", "54GREG34FG"];
+        let newArr = [];
+        for (let value of partNumbers) {
+            if (/\d\d[A-Z][A-Z]/.test(value.slice(-4))) {
+                newArr.push(value);
+            }
+        }
+        console.log(newArr);
+    </script>
+
+</body>
+
+</html>

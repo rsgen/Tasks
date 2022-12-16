@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 2-16 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let array_1 = [2, 4, 7, 8, 1];
+        let array_2 = [2, 5, 11, 6, 1];
+
+        function intersection(a, b) {
+            let array_sum = [];
+            for (let i = 0; i < a.length; i++) {
+                for (let value of b) {
+                    if (a[i] === value) array_sum.push(a[i]);
+                }
+            }
+            array_sum.sort((a, b) => b - a);
+            return array_sum;
+        }
+
+        console.log(intersection(array_1, array_2));
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 2-3 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let layout = "";
+        let newArr = [];
+        let arr = layout.match(/\d+/g);
+        if (arr !== null) {
+            for (let i = 0; i <= arr.length - 1; i++) {
+                if (arr[i] % 2 == 0) {
+                    newArr.push(arr[i] ** 2);
+                }
+                else {
+                    newArr.push(+arr[i]);
+                }
+            }
+        }
+        console.log(newArr);
+    </script>
+
+</body>
+
+</html>

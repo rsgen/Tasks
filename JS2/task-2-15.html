@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 2-14 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let values = ["100", "30", "Не число", "20", "Тоже не число"];
+        let sum = 0;
+        for (let i = 0; i < values.length; i++) {
+            if (!isNaN(values[i])) {
+                sum += +values[i];
+            }
+        }
+        console.log(sum);
+    </script>
+
+</body>
+
+</html>

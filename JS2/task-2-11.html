@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 2-11 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let words = ["Заказ", "Такси", "Доход"];
+        let Pal = 0, notPal = 0, arr = [];
+        function pal(word) {
+            let newWord = "";
+            for (let i = word.length - 1; i >= 0; i--) {
+                newWord = newWord + word[i];
+            }
+
+            if (newWord.toLowerCase() === word.toLowerCase()) {
+                return true
+            } else { return false }
+        }
+        for (let i = 0; i < words.length; i++) {
+            if (pal(words[i])) {
+                Pal += 1
+            }
+            else {
+                notPal += 1
+            }
+        }
+        arr[0] = Pal, arr[1] = notPal;
+        console.log(arr);
+    </script>
+
+</body>
+
+</html>

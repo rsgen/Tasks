@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 2-7 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let values = [10, 185, 11200, 980];
+        let id = 0, ei = 0;
+        for (let i = 0; i < values.length; i++) {
+            if (values[i] >= 1000 && values[i] <= 9999) {
+                id = 1;
+                ei = i;
+                break;
+            }
+        }
+        if (id === 0) console.log("Искомый элемент не был найден");
+        else {
+            console.log(ei);
+        }
+    </script>
+
+</body>
+
+</html>

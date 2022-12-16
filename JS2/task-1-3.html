@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 1-3 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let firstDiv = "<div><p>Первый заголовок</p><p>Второй заголовок</p></div>";
+        let pos = 0;
+        let p1 = 0;
+        for (let i = 0; i < firstDiv.length; i++) {
+            let foundPos = firstDiv.indexOf("<p>", pos);
+            if (foundPos == -1) break;
+            pos = foundPos + 1;
+            p1 += 1;
+        }
+        let p2 = 0;
+        pos = 0;
+        for (let i = 0; i < firstDiv.length; i++) {
+            let foundPos = firstDiv.indexOf("</p>", pos);
+            if (foundPos == -1) break;
+            pos = foundPos + 1;
+            p2 += 1;
+        }
+        console.log(p1 == 2 && p2 == 2);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 2-6 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let values = [10, 185, 11200, 980];
+        let id = false;
+        for (let value of values) {
+            if (value >= 1000 && value <= 9999) {
+                id = true;
+                break;
+            }
+        }
+        console.log(id);
+    </script>
+
+</body>
+
+</html>

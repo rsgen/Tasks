@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 2-13 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let tickets = "Train: AV432, FS452, OE402. Airplane: DR578, JN1089, NDK140.";
+        let objTickets = {};
+        let arr = tickets.match(/Train: (?<train>.*)\. Airplane: (?<airplane>.*)\./gm);
+        console.log(arr);
+
+        // objTickets.train = tickets.
+        // objTickets.airplane = tickets.
+
+    </script>
+
+</body>
+
+</html>

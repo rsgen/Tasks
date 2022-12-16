@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 1-10 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let ticket = "SD-122345674573:RU";
+        let arr = ticket.match(/\d+/);
+        let num = arr[0].length;
+        if (num == 8) console.log("Выбран билет на концерт");
+        else if (num == 12) console.log("Выбран билет в театр");
+        else console.log("Билет не определен");
+    </script>
+
+</body>
+
+</html>

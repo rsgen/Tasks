@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 2-10 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let randValues = ["Банан", 3, "Апельсин", 2, "Вишня"];
+        randValues.sort((a, b) => {
+            const typeA = typeof a
+            const typeB = typeof b
+
+            if (typeA === 'string' && typeB === 'string')
+                return a.localeCompare(b)
+            else if (typeA === 'number' && typeB === 'number')
+                return a - b
+            else if (typeA === 'number' && typeB === 'string')
+                return -1
+            else
+                return 1
+        })
+
+        console.log(randValues)
+    </script>
+
+</body>
+
+</html>

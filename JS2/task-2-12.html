@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 2-12 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let dates = "23.04.1996 07.10.2002 15.08.1945";
+        let arr = dates.split(" ");
+        let dateArr = arr.map( e => e.replace(/[.]/g, '/'));
+        console.log(dateArr);
+    </script>
+
+</body>
+
+</html>
