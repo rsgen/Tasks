@@ -12,8 +12,9 @@
     <script>
         "use strict";
         let ticket = "SD-122345674573:RU";
-        let arr = ticket.match(/\d+/);
-        let num = arr[0].length;
+        let arr = ticket.match(/[a-z-](\d+)/);
+        console.log(arr);
+        let num = arr[1].length;
         if (num == 8) console.log("Выбран билет на концерт");
         else if (num == 12) console.log("Выбран билет в театр");
         else console.log("Билет не определен");

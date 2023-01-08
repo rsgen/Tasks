@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 4-3 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let pet = {
+            name: "Диксон",
+            breed: "Немецкая овчарка"
+        }
+
+        function getDescription() {
+            console.log("Имя питомца: " + this.name + ", Порода: " + this.breed)
+        }
+
+        getDescription =  getDescription.bind(pet);
+        
+
+    </script>
+
+</body>
+
+</html>

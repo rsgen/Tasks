@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 3-5 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let employee = new Map([
+            ["firstName", "Ivan"],
+            ["lastName", "Ivanov"],
+            ["hireDate", "21.10.2015"]
+        ]);
+        let e = new Map(employee);
+        e.delete("hireDate");
+        e.set("jobName", "IT PROG");
+        console.log(Array.from(e));
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 4-2 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let input = {
+            id: 1,
+            value: "Добрый вечер",
+            firstName: "Григорий",
+            lastName: "Стрельников"
+        }
+
+        function sayHi() {
+            console.log(`${this.value}, ${this.firstName} ${this.lastName}!`)
+        }
+
+        let f = sayHi.bind(input);
+        f();
+    </script>
+
+</body>
+
+</html>

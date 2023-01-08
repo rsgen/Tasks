@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 4-4 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let props = {
+            name: "Анатолий",
+            age: 29,
+            sayHi: () => "привет"
+        }
+        function getValue() {
+            let str = "";
+            // console.log(Object.keys(this))
+            // console.log(Object.values(this))
+            for (let k in this) {
+                if (typeof this[k] !== "function") {
+                    str += `${k}: ${this[k]}, `;
+                }
+            }
+            str = str.slice(0, str.length - 2);
+            console.log(`Значения свойств объекта props (${str})`);
+        }
+
+        getValue = getValue.call(props);
+    </script>
+
+</body>
+
+</html>

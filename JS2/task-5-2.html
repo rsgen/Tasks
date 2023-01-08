@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 5-2 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let employees = {
+            firstName: "Петя",
+            lastName: "Иванов",
+            ratePerDay: 2500,
+            workingDays: 5,
+            getSalary() { console.log(employees.ratePerDay * employees.workingDays) }
+        }
+        let arr = Object.entries(employees);
+        let arrKeys = [];
+        for (let value of arr) {
+            if (typeof value[1] !== "function") {
+                arrKeys.push(value[0]);
+            }
+        }
+        console.log(arrKeys.join(", "));
+    </script>
+
+</body>
+
+</html>

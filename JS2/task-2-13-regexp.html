@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 2-13-regexp JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let tickets = "Train: AV432, FS452, OE402. Airplane: DR578, JN1089, NDK140.";
+        
+        const matches = tickets.matchAll(/[ ]?(?<type>.*?): (?<tickets>.*?)\./gm)
+
+        const answer = {}
+        for (const match of matches) {
+            const key = match.groups.type.toLowerCase()
+            const value = match.groups.tickets.split(', ')
+            answer[key] = value
+        }
+
+        console.log(answer)
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 5-1 JS2</title>
+</head>
+
+<body>
+
+    <script>
+        "use strict";
+        let order = {
+            productName: "Велосипед",
+            costomerName: "Саша",
+            salesName: "Петя",
+            totalPrice: 15000
+        }
+        let descriptor = Object.getOwnPropertyDescriptor(order, 'totalPrice');
+        console.log(descriptor);
+    </script>
+
+</body>
+
+</html>

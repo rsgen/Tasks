@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 5-3 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let firstName = "Александр", lastName = "Петров";
+        class Person {
+            constructor(a, b) {
+                this.firstName = a;
+                this.lastName = b;
+            }
+            get fullName() {
+                return `${this.firstName} ${this.lastName}`;
+            }
+            set fullName(str) {
+                let data = str.split(" ");
+                this.firstName = data[0];
+                this.lastName = data[1];
+            }
+        }
+        let user = new Person(firstName, lastName);
+        // user.fullName(111)
+        user.fullName = "Иван Иванов";
+        console.log(user);
+        console.log(user.fullName);
+    </script>
+
+</body>
+
+</html>

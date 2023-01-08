@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 3-6 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let array = [
+            ["boolean", true],
+            ["number", 4],
+            ["string", "word"],
+            ["object", {}]
+        ];
+        function countString(a) {
+        let cnt = 0;
+            for (let value of a) {
+            if (typeof value[1] === "string") cnt += 1;
+            }
+        console.log("Количество строковых элементов в именованном массиве: " + cnt);
+        }
+        countString(array);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 5-4 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let name = "Pizza", phone = "81234567890";
+        class Delivery {
+            constructor(name, phone) {
+                this.name = name;
+                this.phone = phone;
+                this.validPhone = /^\+/.test(phone);
+            }
+        }
+        let deliveryName = new Delivery(name, phone);
+
+
+    </script>
+
+</body>
+
+</html>

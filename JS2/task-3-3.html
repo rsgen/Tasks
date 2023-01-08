@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Task 3-3 JS2</title>
+</head>
+
+<body>
+
+
+    <script>
+        "use strict";
+        let article = {
+            title: "Загадки дачного огурца",
+            text: "Огурец не перестает удивлять своими выходками. Хозяйка в недоумении"
+        }
+        let author = {
+            name: "Ричард М.В.",
+            age: 43
+        }
+        article = Object.assign(article, author)
+        console.log(article);
+    </script>
+
+</body>
+
+</html>
